@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@font-face {
+    font-family: lovera;
+    src: url(font_local/Lovera\ Personal\ Use\ Only.otf), format('opentype');
+}
+body{
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.616), rgba(0, 0, 255, 0.308), rgba(0, 0, 255, 0.116));
+    font: bold normal 16px lovera;
+    color: white;
+    text-align: center;
+    
+}
+div{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    padding: 3%;
+    margin: auto;
+    text-align: center;
+    background-color: violet;
+    border-radius: 5%;
+}
+div:hover{
+    font-size: 2em;
+    background-color: blue;
+}
