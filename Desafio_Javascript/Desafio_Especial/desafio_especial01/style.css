@@ -1,0 +1,31 @@
+@charset "UTF-8";
+@font-face {
+    font-family: lovera;
+    src: url(font/Lovera\ Personal\ Use\ Only.otf), format('opentype');
+}
+body{
+    background-image: linear-gradient(to right, yellow, blue, red);
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    font-family: lovera;
+    color: rgb(54, 54, 0);
+    text-align: center;
+}
+.sel{
+    text-align: left;
+}
+header{
+    color: white;
+}
+main{
+    background-color: rgba(255, 255, 0, 0.568);
+    width: 500px;
+    height: 500px;
+    border-radius: 5%;
+    padding: 5%;
+    margin: auto;
+}
+footer{
+    color: white;
+}
