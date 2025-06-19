@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antecessor e sucessor de Números</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right, rgb(70, 70, 0), rgb(129, 129, 1), rgb(223, 223, 2)) ;
+            color: white;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div{
+            display: inline-block;
+            background-color: olivedrab;
+            width: 300px;
+            height: 100px;
+            box-shadow: 1px 2px 5px rgba(153, 205, 50, 0.541);
+            border-radius: 3%;
+            text-align: center;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Antes e Depois</h1>
+        <div id="res" onclick="antSucess()">
+            Antecessor e Sucessor
+        </div>
+    </main>
+    <footer>
+        <p>&copy;Santos Eduardo Júnior</p>
+    </footer>
+    <script>
+        function antSucess(){
+            let num = Number(prompt('Insira um  número inteiro qualquer:'))
+            if(num == 0){
+                alert('Não pode enscontrar o atecessor de 0')
+            }else{
+                alert(`O número adicionado foi ${num}, e o seu antecessor é ${num-1}, e depois de ${num}, o número que vem é igual à ${num+ 1}`)
+            }
+        }
+    </script>
+</body>
+</html>
