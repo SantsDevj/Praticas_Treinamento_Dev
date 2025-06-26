@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 04</title>
+    <style>
+        body{
+            background-color: azure;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 2em;
+            color: rgb(73, 72, 72);
+            text-align: center;
+        }
+        div{
+            text-align: center;
+            width: 300px;
+            height: 100px;
+            background-color: beige;
+        }
+        #divc{
+            display: inline-block;
+            border-radius: 3%;
+        }
+        #divc1{
+            background-color: gainsboro;
+            width: auto;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="divc1">
+        <footer>
+            <h1>Calculando o troco</h1>
+        </footer>
+    </div>
+    
+    <div id="divc" onclick="comprarProd()">
+        <p>Comprar Produto</p>
+    </div>
+    <header>
+        <p>&copy;Santos Eduardo</p>
+    </header>
+    <script>
+        function comprarProd(){
+            let prod = String(window.prompt('Qual é o produto que pretende comprar?'))
+            let preco = Number(window.prompt(`Qual é o preço de ${prod}?`))
+            let value = Number(window.prompt(`Qual foi o valor total que pagou pelo ${prod}?`))
+
+            //Finalizando o programa
+            window.alert(`Você comprou ${prod}, que custou ${preco}Mzn. Pagaste com ${value}Mzn, e o seu troco é de ${value-preco}Mzn`)
+        }
+    </script>
+</body>
+</html>
