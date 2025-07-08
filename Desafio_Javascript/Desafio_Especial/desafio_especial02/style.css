@@ -1,0 +1,36 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: yellowgreen;
+    color: white;
+    margin: 0px;
+    font-size: 24px;
+}
+header{
+    background-color: green;
+    text-align: center;
+    padding: 5px;
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+}
+nav > a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+main{
+    text-align: center;
+    text-align: justify;
+    padding: 5px;
+    margin: auto;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.534);
+    border-radius: 5px;
+}
+footer{
+    background-color: green;
+    text-align: center;
+    padding: 5px;
+}
+footer > p{
+    margin: 0px;
+}

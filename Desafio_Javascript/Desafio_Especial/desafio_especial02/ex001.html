@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício número 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <style>
+        div{
+            width: 200px;
+            height: 75px;
+            background-color: rgba(0, 128, 0, 0.527);
+            margin: auto;
+            padding: 2px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exercício do Olá Mundo</h1>
+    </header>
+    <main>
+        <section id="desc">
+            <p>Este exercício, serve para mostrar um "Olá Mundo" na tela do computador</p>
+        </section>
+        <section>
+            <div onclick="mostrarOla()">
+                Clique Aqui!
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copf;Site Desenvolvido por Santos Eduardo</p>
+    </footer>
+    
+    <script>
+        function mostrarOla(){
+            window.alert('Olá Mundo!')
+        }
+    </script>
+</body>
+</html>
