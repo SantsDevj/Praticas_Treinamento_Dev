@@ -6,7 +6,14 @@ public class main {
 
         dog1.setIdade(10);
         dog1.setNome("Krypto");
-        //Ver o vídeo de guanbara para corrigir.
+        dog1.infomacao();
+        dog1.fazerBarrulo();
         
+        //Instanciando a Classe gato
+        Gato g1 = new Gato();
+        g1.setIdade(2);
+        g1.setNome("Arnold");
+        g1.fazerBarrulo();
+        g1.infomacao();
     }
 }

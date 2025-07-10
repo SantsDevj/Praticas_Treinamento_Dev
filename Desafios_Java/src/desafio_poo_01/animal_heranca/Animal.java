@@ -1,8 +1,8 @@
 package desafio_poo_01.animal_heranca;
 
 public class Animal {
-    private String nome;
-    private int idade;
+    protected String nome;
+    protected int idade;
 
     //Getters e Setters
     //Nome
