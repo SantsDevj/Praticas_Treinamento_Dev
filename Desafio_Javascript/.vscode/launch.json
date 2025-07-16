@@ -1,0 +1,14 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Open ex002.html",
+            "file": "c:\\Users\\One Above All\\Desktop\\System\\Santos Eduardo\\Curso de Git&GitHub\\GitHub_Exercicios\\Praticas_Treinamento_Dev\\Desafio_Javascript\\Desafio_Especial\\desafio_especial02\\ex002.html"
+        }
+    ]
+}
