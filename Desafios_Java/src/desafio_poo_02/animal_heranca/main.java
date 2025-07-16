@@ -1,4 +1,4 @@
-package desafio_poo_01.animal_heranca;
+package desafio_poo_02.animal_heranca;
 
 public class main {
     public static void main(String[] args) {

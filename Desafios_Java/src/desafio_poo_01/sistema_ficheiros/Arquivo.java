@@ -1,4 +1,4 @@
-package desafio_poo.sistema_ficheiros;
+package desafio_poo_01.sistema_ficheiros;
 
 public class Arquivo  implements InterfaceArquivo{
     private String nome_arquivo;

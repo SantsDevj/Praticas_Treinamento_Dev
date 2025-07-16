@@ -1,4 +1,4 @@
-package desafio_poo.pessoa_exercicio;
+package desafio_poo_01.pessoa_exercicio;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

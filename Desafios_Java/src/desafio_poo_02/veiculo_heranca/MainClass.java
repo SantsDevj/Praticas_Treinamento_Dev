@@ -1,4 +1,4 @@
-package desafio_poo_01.veiculo_heranca;
+package desafio_poo_02.veiculo_heranca;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package desafio_poo_01.formas_geometricas;
+package desafio_poo_02.formas_geometricas;
 
 public abstract class Formas {
     //Método para calcular a área das formas
