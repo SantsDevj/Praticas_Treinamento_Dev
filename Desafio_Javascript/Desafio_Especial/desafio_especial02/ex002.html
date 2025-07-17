@@ -9,8 +9,12 @@
     <style>
         input{
             width: 100px;
-            height: auto;
+            height: 25px;
             box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.568);
+            border-radius: 10px;
+        }
+        section > input{
+            margin-left: 30px;
         }
     </style>
 </head>
@@ -19,17 +23,25 @@
         <h1>Exercício de Cálculos Matemáticos</h1>
     </header>
     <main>
-        <section id="insertnum">
-            <h2>Insira o primeiro número</h2>
-            <input type="Number" id="num1">
-            <h2>Insira o segundo número</h2>
-            <input type="Number" id="num2">
+        <section id="inserir">
+            <p>Insira dois números: <input type="Number" id="num01"> : <input type="Number" id="num02"></p> 
+            <hr>
         </section>
-        <section id="calc">
-           <input type="button" value="Calcular" onclick="calcular()">
-        </section>
-        <section id="res">
-           
+        <section id="opcoes">
+            <p>Qual das opções escolhes para realizar o cálculo</p>
+            <ol>
+                <li>Adição</li>
+                <li>Subtração</li>
+                <li>Multiplicação</li>
+                <li>Divisão</li>
+            </ol>
+            <input type="Number" id="opcao">
+            <hr>
+            <p>Clique abaixo para realizar o cálculo</p>
+            <input type="button" value="Calcular" onclick="calcular()">
+            <div id="res">
+                <em>Aqui será impresso o resultado...</em>
+            </div>
         </section>
     </main>
     <footer>
@@ -37,15 +49,20 @@
         <p><a href="main_site.html" target="_self" rel="internal">Voltar a página Inicial</a></p>
     </footer>
     <script>
-        function calcular(){
-            let n1 = document.getElementById('#num1')
-            let n2 = document.getElementById('#num2')
-            
-            if(Number(n1) == 0){
-                alert('Algo errado')
+       let n1 = document.querySelector('input#num01')
+       let n2 = document.querySelector('input#num02')
+       let opcs = document.querySelector('input#opcao')
+       let result = document.querySelector('div#res')
+
+       //Organizando as variáveis
+       let numer1 = Number(n1);
+       let numer2 = Number(n2)
+       let opcoes = Number(opcs) 
+       function calcular(){
+            if(opcoes == 1){
+                alert('ola')
             }
-        }
-      
+       }
     </script>
 </body>
 </html>

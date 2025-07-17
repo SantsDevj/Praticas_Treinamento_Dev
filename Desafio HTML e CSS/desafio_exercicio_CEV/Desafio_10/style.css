@@ -1,0 +1,32 @@
+body{
+    background-color:antiquewhite;
+    margin: 0px;
+}
+header{
+    text-align: center;
+    margin: 0%;
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(to top, rgb(0, 48, 0), rgb(2, 104, 2), green);
+}
+header > p{
+    text-align: center;
+}
+nav > a:hover{
+    border-radius: 3px;
+    width: 75px;
+    height: 75px;
+    background-color: green;
+    color: rgb(0, 34, 0);
+}
+nav > a {
+    margin-left: 30px;
+    color: white;
+    text-decoration: none;
+}
+main{
+    width: 500px;
+    height: 100px;
+    margin: auto;
+    background-color: white;
+}
