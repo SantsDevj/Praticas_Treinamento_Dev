@@ -9,18 +9,27 @@
 </head>
 <body>
     <header>
-        <h1></h1>
+        <h1>Calculadora de IMC</h1>
     </header>
     <main>
         <section>
-            <div></div>
+            <h2>Insira os seus dados para iniciarmos o cálculo</h2>
+            <p>Insira o seu peso: <input type="number" name="peso" id="peso"></p>
+            <p>Insira a sua altura: <input type="number" name="alt" id="alt"></p>
+            <input type="button" value="Calcular" ondblclick="calcIMC">
         </section>
     </main>
     <footer>
-
+        <p>&copf;Site Desenvolvido por Santos Eduardo</p>
+        <p><a href="main_site.html" target="_self" rel="internal">Voltar a página Inicial</a></p>
     </footer>
     <script>
-
+        function calcIMC(){
+            let peso = document.getElementById('peso')
+            if (peso > 0){
+                alert('Olá')
+            }
+        }
     </script>
 </body>
 </html>

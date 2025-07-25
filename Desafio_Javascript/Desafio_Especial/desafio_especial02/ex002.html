@@ -49,20 +49,15 @@
         <p><a href="main_site.html" target="_self" rel="internal">Voltar a página Inicial</a></p>
     </footer>
     <script>
-       let n1 = document.querySelector('input#num01')
-       let n2 = document.querySelector('input#num02')
-       let opcs = document.querySelector('input#opcao')
-       let result = document.querySelector('div#res')
+        function calcular(){
+            let num1 = document.getElementById('num01')
+            let num2 = document.getElementById('num02')
+            let opcoes = document.getElementById('opcao')
 
-       //Organizando as variáveis
-       let numer1 = Number(n1);
-       let numer2 = Number(n2)
-       let opcoes = Number(opcs) 
-       function calcular(){
-            if(opcoes == 1){
-                alert('ola')
+            if(Number(opcoes) == 1){
+                alert('Ola')
             }
-       }
+        }
     </script>
 </body>
 </html>

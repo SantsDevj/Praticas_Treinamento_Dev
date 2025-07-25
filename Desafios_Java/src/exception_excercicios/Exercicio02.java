@@ -3,8 +3,7 @@ package exception_excercicios;
 import java.util.Scanner;
 
 public class Exercicio02 {
-    public static int getElementoAray(int index){
-        int[] nums = new int[10];
+    public static int getElementoAray(int index, int[] nums){
         try {
             return nums[index];   
         } catch (ArrayIndexOutOfBoundsException e) {
@@ -33,6 +32,6 @@ public class Exercicio02 {
 
         System.out.println("Elemento encontrado");
         //Retornando o elemento
-        System.out.println(getElementoAray(indic));
+        System.out.println(getElementoAray(indic, nums));
     }
 }
