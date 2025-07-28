@@ -1,3 +1,5 @@
+package desafio_poo_02.funcionario_herança;
+
 public abstract class Funcionario{
     protected String nome;
     protected double salario;

@@ -1,3 +1,5 @@
+package desafio_poo_02.funcionario_herança;
+
 public class Gerente extends Funcionario{
     //subescrevendo o método calcularBonus
     @Override
