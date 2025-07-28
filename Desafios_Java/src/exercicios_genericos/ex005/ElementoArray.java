@@ -17,5 +17,7 @@ public class ElementoArray {
 
         String[] array2 = new String[3];
         primeiroElemento(array2);
+        array2[0] = "João";
+        array2[1] = "Alex";
     }
 }

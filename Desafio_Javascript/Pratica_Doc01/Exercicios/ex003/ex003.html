@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cálculo de IMC</title>
+    <style>
+        main > p{
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Cálculo de <abbr title="Índice de Massa Corporal">IMC</abbr></h1>
+    </header>
+    <main>
+        <p>Insira o seu peso(Kg): <input type="number" name="peso" id="peso"></p>
+        <p>Insira a sua altura(m): <input type="number" name="alt" id="alt"></p>
+        <input type="button" value="Calcular IMC" onclick="calcImc()">
+    </main>
+    <footer>
+        <p>Exercício Resolvido por <em>&copf;Santos Eduardo</em></p>
+    </footer>
+    <script>
+        let peso = document.getElementById('peso')
+        let altura = document.getElementById('alt')
+        function calcImc(){
+            let pesof = Number(peso.value)
+            let alturaf = Number(altura.value)
+            
+            if(pesof == '' && alturaf == ''){
+                alert('Ola')
+            }
+        }
+    </script>
+</body>
+</html>
