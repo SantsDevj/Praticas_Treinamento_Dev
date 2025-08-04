@@ -2,39 +2,36 @@ package exercicios_collections.recoradando;
 
 import java.util.Iterator;
 
-public class Lista<T extends Number>  implements Iterable<T>{
-    private T[] itens_lista;
+public class Lista<T> implements Iterable<T>{
+    private T[] itens = (T[]) new Object[10];
     private int contador;
 
-    //Construtor para inicializar a capacidade da lista
-    public Lista(int cap_lista){
-        this.itens_lista = (T[]) new Object[cap_lista];
-    }
-
-    //Adicionar elemento sobre a lista
-    public void adicionar(T elemento){
-        if (contador == itens_lista.length) {
-            itens_lista[contador++] = elemento;
+    //Adicionando itens dentro da  na lista
+    public void adicionar(T item){
+        if (contador == itens.length) {
+            T[] novoItens = (T[]) new Object [itens.length * 2];
         }
+        this.itens[contador++] = item;
     }
-    //Obter o elemento da Lista
+    //Obtendo um elemento através do índice
     public T obter(int indice){
-        return itens_lista[indice];
+        if (indice < 0 || indice > itens.length ) {
+            throw new IndexOutOfBoundsException("Índice fora do tamanho da lista");
+        }
+        return itens[indice];
     }
-
     @Override
     public Iterator<T> iterator() {
-        return ListaIterador(this);
+        return new IteradorLista(this);
     }
-
-    private class ListaIterador implements iterator<T>{
+    
+    private class  IteradorLista implements Iterator<T>{
         private Lista<T> lista;
         private int indice;
 
-        public ListaIterador(Lista<T> lista){
+        public IteradorLista(Lista<T> lista){
             this.lista = lista;
         }
-        
         @Override
         public boolean hasNext(){
             return (indice < lista.contador);
@@ -42,8 +39,8 @@ public class Lista<T extends Number>  implements Iterable<T>{
 
         @Override
         public T next(){
-            return lista.itens_lista[indice++];
+            return lista.itens[indice++];
         }
     }
-
+    
 }

@@ -5,16 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Nome do Título</title>
+    <style>
+        body{
+            text-align: justify;
+        }
+        main{
+            height: auto;
+        }
+        input{
+            background-color: white;
+            color: black;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Inserir Título</h1>
+        <h1>Operação Aritmética Simples</h1>
+        <p>Este exercício mostra como realizar cálculos como adiçào, subtração, multiplicação, e divisão</p>
     </header>
     <main>
-        
+        <p>Insira o primeiro número: <input type="number" name="num01" id="num01"></p>
+        <p>Insira o segundo número: <input type="number" name="num02" id="num02"></p>
+        <aside>
+            <p>Escolha uma das opções:</p>
+            <ol>
+                <li>Adição</li>
+                <li>Subtracção</li>
+                <li>Multiplicação</li>
+                <li>Divisão</li>
+            </ol>
+            <input type="number" name="opcs" id="opcs">
+        </aside>
+        <p>Clique aqui para realizar o cálculo <input type="button" value="Calcular" id="calc"></p>
     </main>
     <footer>
         <p>Exercício Resolvido por <em>&copf;Santos Eduardo</em></p>
     </footer>
+
+    <!--Criando Scripts-->
+    <script>
+        let calc = document.getElementById('calc')
+        addEventListener('click', calcular)
+        function calcular(){
+            let num1 = document.getElementById('num01')
+            let n1 = Number(num1.value)
+            if(n1 == 0){
+                alert('Número inválido')
+            }
+        }
+    </script>
 </body>
 </html>
