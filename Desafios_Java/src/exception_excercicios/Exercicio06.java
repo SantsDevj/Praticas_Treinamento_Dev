@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Exercicio06 {
     public static void definirIdade(int idade) throws IllegalAccessException{
-        if (idade > 130 && idade < 0) {
+        if (idade > 130 || idade < 0) {
             throw new IllegalAccessException("Idade inválida. Deve estar entre 0 e 130");
         }
     }
@@ -15,10 +15,7 @@ public class Exercicio06 {
         try{
             definirIdade(idade);
         } catch(IllegalAccessException e){
-            if (idade > 130 && idade < 0) {
-                e.getMessage();
-            }
-            
+            System.out.println(e.getMessage());
         }
         read.close();
     }
